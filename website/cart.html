@@ -4,31 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Checkout</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <style>
     body {
   background:
-     url(../images/progamer.jpg)   
-     center / 500px 500px 
      no-repeat               
      fixed                   
      padding-box              
      content-box             
-     blue;                    
-}
+     cyan; 
   </style>
   <script src="scripts.js" async></script>
 </head>
-<body>
+<body onload='addItem()'>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="/index.html">Pro Gamers Galore</a>
+        <a class="navbar-brand" href="index.html">Pro Gamers Galore</a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="accessory.html">Accessories</a>
@@ -40,13 +37,21 @@
             <a class="nav-link" href="gaming.html" tabindex="-1" aria-disabled="true">Gaming</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true"> Shopping Cart</a>
+            <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true">Shopping Cart</a>
           </li>
         </ul>
         </form>
       </div>
     </div>
   </nav>
-  
+  <section class="checkout-container">
+    <h2 class="checkout">Checkout</h2>
+    <div class="cart-row">
+        <span class="checkout-heading">Items</span>
+        <br>
+    </div>
+    <div id="items"></div>
+    <button class="purchase" type="button">Purchase</button>
+</section>
 </body>
 </html>
